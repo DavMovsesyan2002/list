@@ -1,0 +1,63 @@
+@import '../../abstracts/variables';
+
+.switch-container{
+  display: flex;
+  align-items: center;
+  color: $ev-color-white;
+}
+
+/* Style for the toggle switch-mode */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+/* Hide the default checkbox input */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style for the switch-mode slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $ev-color-green;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* Style for the switch-mode slider in the checked state */
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: $ev-color-dark;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Style for the checked state */
+.switch input:checked + .slider {
+  background-color: $ev-color-green;
+}
+
+/* Style for the slider in the checked state */
+.switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* Style for the slider when it's in focus (e.g., for accessibility) */
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}

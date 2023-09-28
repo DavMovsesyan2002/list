@@ -1,0 +1,28 @@
+@import '../../abstracts/variables';
+
+.app-container{
+  height: auto;
+  padding: 20px;
+  display: flex;
+  .title{
+    position: absolute;
+    top: -10px;
+    z-index: 4;
+  }
+  input {
+    width: 100%;
+  }
+  .line{
+    margin: auto;
+    width: 80%;
+    border:  1px solid $ev-color-gray-dark;
+  }
+  .column-container {
+    width: 400px;
+    height: 340px;
+    border: 1px solid $ev-color-gray-dark;
+    position: relative;
+    padding: 14px 10px;
+    border-radius: 5px;
+  }
+}

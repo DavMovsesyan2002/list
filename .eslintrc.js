@@ -33,7 +33,6 @@ module.exports = {
     'no-else-return': 'off',
     'import/prefer-default-export': 'off',
     'react/no-array-index-key': 'off',
-    'max-len': ['error', {code: 140}],
     'no-console': 'warn',
     'security/detect-object-injection': 'off',
     'react/no-unknown-property': [
