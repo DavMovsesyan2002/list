@@ -21,17 +21,13 @@ body {
   box-sizing: border-box;
   color: $ev-color-white;
   height: 35px;
-  padding: 5px;
-  font-size: 16px;
+  padding: $ev-margin-5;
+  font-size: $ev-font-size-px-16;
 }
 
 .custom-input:focus {
   outline: none;
 }
-
-//.custom-input::placeholder{
-//  color: $ev-color-white;
-//}
 
 .day{
   background: $ev-color-white;
@@ -73,6 +69,9 @@ select {
 
 .mt-16{
   margin-top: $ev-margin-16;
+}
+.ml-16{
+  margin-left: $ev-margin-16;
 }
 
 .color-white *{

@@ -2,7 +2,7 @@
 
 .app-container{
   height: auto;
-  padding: 20px;
+  padding: $ev-margin-20;
   display: flex;
   .title{
     position: absolute;
@@ -22,7 +22,7 @@
     height: 340px;
     border: 1px solid $ev-color-gray-dark;
     position: relative;
-    padding: 14px 10px;
+    padding: $ev-margin-14 $ev-margin-10;
     border-radius: 5px;
   }
 }

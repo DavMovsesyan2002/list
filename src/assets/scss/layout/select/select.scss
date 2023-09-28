@@ -18,7 +18,7 @@
 }
 .custom-icon {
   background: #474747;
-  padding: 6px;
+  padding: $ev-margin-6;
   cursor: pointer;
   background: url('../../../../../public/images/down-chevron.png') no-repeat center center; /* Specify your custom icon */
   background-size: 20px 20px; /* Adjust the icon size as needed */

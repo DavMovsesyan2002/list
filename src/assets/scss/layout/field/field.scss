@@ -14,7 +14,7 @@
   border: 1px solid $ev-color-gray-dark;
   border-radius: 4px;
   width: 100%;
-  font-size: 16px;
+  font-size: $ev-font-size-px-16;
   overflow: hidden;
 
 }
@@ -34,8 +34,8 @@
 /* Style for the number input */
 .styled-number-input {
   border: none;
-  padding: 0 10px; /* Adjust padding as needed */
-  font-size: 16px;
+  padding: $ev-margin-0 $ev-margin-10; /* Adjust padding as needed */
+  font-size: $ev-font-size-px-16;
   width: 40px; /* Adjust width as needed */
   appearance: textfield; /* Restore input styles for Firefox */
 }

@@ -16,7 +16,7 @@ const List = () => {
   }
 
   return (
-    <div className="column-container ml-10 overflow-y-auto">
+    <div className="column-container ml-16 overflow-y-auto">
       <table className="table-container">
         <thead className="table-row">
           <tr>

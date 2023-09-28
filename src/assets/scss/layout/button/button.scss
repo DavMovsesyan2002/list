@@ -4,10 +4,10 @@
   background-color: $ev-color-dark-secondary;
   color: $ev-color-white;
   border: none;
-  padding: 12px 24px;
+  padding: $ev-margin-12 $ev-margin-24;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: $ev-font-size-px-16;
   transition: background-color 0.3s;
   width: 100%;
 }

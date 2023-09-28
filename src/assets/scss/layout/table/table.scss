@@ -14,11 +14,8 @@
       cursor: pointer;
     }
     td, th{
-      padding: 4px;
+      padding: $ev-margin-4;
       border: none;
-      //width: 400px;
-      //display: flex;
-      //justify-content: space-evenly;
     }
   }
 }
