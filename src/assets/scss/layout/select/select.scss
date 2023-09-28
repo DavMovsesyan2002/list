@@ -1,0 +1,25 @@
+@import '../../abstracts/variables';
+
+.custom-select-container{
+  position: relative;
+}
+
+/* Style for the custom select indicator icon */
+.custom-icon-container{
+  background: #474747;
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.custom-icon {
+  background: #474747;
+  padding: $ev-margin-6;
+  cursor: pointer;
+  background: url('../../../../../public/images/down-chevron.png') no-repeat center center; /* Specify your custom icon */
+  background-size: 20px 20px; /* Adjust the icon size as needed */
+}

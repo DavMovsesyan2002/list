@@ -1,0 +1,52 @@
+@import '../../abstracts/variables';
+
+/* Style for the container */
+.number-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style for the input group */
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid $ev-color-gray-dark;
+  border-radius: 4px;
+  width: 100%;
+  font-size: $ev-font-size-px-16;
+  overflow: hidden;
+
+}
+
+/* Style for the plus and minus buttons */
+.minus-button, .plus-button {
+  background-color: $ev-color-dark-secondary;
+  border: none;
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the number input */
+.styled-number-input {
+  border: none;
+  padding: $ev-margin-0 $ev-margin-10; /* Adjust padding as needed */
+  font-size: $ev-font-size-px-16;
+  width: 40px; /* Adjust width as needed */
+  appearance: textfield; /* Restore input styles for Firefox */
+}
+
+/* Remove default number input spin buttons */
+.styled-number-input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.line-vertical{
+  width: 1px;
+  height: 35px;
+  background: $ev-color-gray-dark;
+}

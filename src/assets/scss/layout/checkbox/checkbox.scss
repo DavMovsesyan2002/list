@@ -1,0 +1,50 @@
+@import '../../abstracts/variables';
+
+/* Style for the custom checkbox container */
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  cursor: pointer;
+  font-size: $ev-font-size-px-16;
+  color: $ev-color-white;
+  input{
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+/* Style for the custom checkbox label */
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 25px; /* Set the checkbox's height */
+  width: 25px; /* Set the checkbox's width */
+  background-color: $ev-color-dark; /* Unchecked background color */
+  border: 1px solid $ev-color-green; /* Border for the checkbox */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+/* Style for the custom checkbox label (checked state) */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #3498db; /* Checked background color */
+}
+
+/* Style for the checkbox label content */
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 8px;
+  top: 5px;
+  width: 5px; /* Width of the checkmark */
+  height: 10px; /* Height of the checkmark */
+  border: solid white; /* Checkmark color */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); /* Rotate the checkmark */
+}

@@ -1,0 +1,99 @@
+@import '../abstracts/variables';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.custom-input {
+  background: $ev-color-dark;
+  display: inline-block;
+  border: 1px solid $ev-color-gray-dark;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $ev-color-white;
+  height: 35px;
+  padding: $ev-margin-5;
+  font-size: $ev-font-size-px-16;
+}
+
+.custom-input:focus {
+  outline: none;
+}
+
+.day{
+  background: $ev-color-white;
+}
+
+.night{
+  background: $ev-color-dark;
+}
+
+.active-color-gray{
+  background: $ev-color-active-gray
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
+}
+
+
+input {
+  @extend .custom-input; /* Extend the common styles */
+}
+
+select {
+  background: transparent;
+  @extend .custom-input; /* Extend the common styles */
+  width: 100%;
+  appearance: none;
+  position: relative;
+  z-index: 10;
+}
+
+.m-12{
+  margin-top: $ev-margin-12;
+}
+
+.ml-10{
+  margin-left: $ev-margin-10;
+}
+
+.mt-16{
+  margin-top: $ev-margin-16;
+}
+.ml-16{
+  margin-left: $ev-margin-16;
+}
+
+.color-white *{
+  color: $ev-color-white
+}
+
+.color-white::placeholder{
+  color: $ev-color-white
+}
+
+.color-white-input input{
+  background: $ev-color-white
+}
+
+.color-dark *{
+  color: $ev-color-dark
+}
+
+.color-dark::placeholder{
+  color: $ev-color-dark
+}
+
+.color-dark-input input{
+  background: $ev-color-dark
+}

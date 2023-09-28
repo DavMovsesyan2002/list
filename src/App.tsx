@@ -1,24 +1,22 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, {useEffect} from 'react'
+import InsertRow from './components/InsertRows/InsertRow'
+import List from './components/List/List'
+import {UseListContext} from './context/list/listContext'
+import {IListProps} from './context/list/listContext.props'
 
-function App() {
+const App = () => {
+  const {mode, list} = UseListContext() as IListProps
+
+  useEffect(() => {
+    localStorage.setItem('list', JSON.stringify(list))
+  }, [list])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`container ${mode ? 'day color-white-input' : 'night color-dark-input'}`}>
+      <div className="app-container">
+        <InsertRow />
+        <List />
+      </div>
     </div>
   )
 }

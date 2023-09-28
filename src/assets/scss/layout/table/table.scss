@@ -1,0 +1,25 @@
+@import '../../abstracts/variables';
+
+.table-container{
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  overflow-y: auto;
+
+  .table-row{
+    th{
+      background: $ev-color-dark-secondary;
+    }
+    td{
+      cursor: pointer;
+    }
+    td, th{
+      padding: $ev-margin-4;
+      border: none;
+    }
+  }
+}
+
+table{
+  color: $ev-color-white;
+}
